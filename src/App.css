@@ -82,6 +82,10 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+
+h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -229,6 +233,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+
 
 /************ Banner Css ************/
 .banner {
