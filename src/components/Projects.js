@@ -11,21 +11,23 @@ export const Projects = () => {
 
   const projects = [
     {
+      
       title: "Queen City Pups Project",
       description: "Design & Development",
       imgUrl: projImg1,
-      link: "https://"
+      link: "https://evening-river-11733.herokuapp.com/"
     },
     {
       title: "Notetaker Application",
       description: "Express.js, RESTful APIs",
       imgUrl: projImg2,
+      link: "https://mighty-ocean-87757.herokuapp.com/"
     },
     {
       title: "Weather Dashboard",
       description: "Thrid Party API",
       imgUrl: projImg3,
-      
+      link:"https://ajenkinsynwa.github.io/weatherdashboard/"
     },
   ]
 
@@ -42,10 +44,10 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Repository's</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="third">Tab 3</Nav.Link>
