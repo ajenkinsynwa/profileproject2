@@ -1,5 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import { ProjectCard2} from "./ProjectCard2";
 import projImg1 from "../assets/img/queen.png";
 import projImg2 from "../assets/img/note.png";
 import projImg3 from "../assets/img/weather.png";
@@ -15,19 +16,22 @@ export const Projects = () => {
       title: "Queen City Pups Project",
       description: "Design & Development",
       imgUrl: projImg1,
-      link: "https://evening-river-11733.herokuapp.com/"
+      link: "https://evening-river-11733.herokuapp.com/",
+      link2: "https://github.com/tedtalktimmy/queen-city-pup" 
     },
     {
       title: "Notetaker Application",
       description: "Express.js, RESTful APIs",
       imgUrl: projImg2,
-      link: "https://mighty-ocean-87757.herokuapp.com/"
+      link: "https://mighty-ocean-87757.herokuapp.com/",
+      link2: "https://github.com/ajenkinsynwa/express.js-notetaker" 
     },
     {
       title: "Weather Dashboard",
       description: "Thrid Party API",
       imgUrl: projImg3,
-      link:"https://ajenkinsynwa.github.io/weatherdashboard/"
+      link:"https://ajenkinsynwa.github.io/weatherdashboard/",
+      link2: "https://github.com/ajenkinsynwa/weatherdashboard" 
     },
   ]
 
@@ -40,7 +44,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>You can find all of my projects on my Github</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -68,11 +72,23 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                    <Row>
+                        {
+                          projects.map((project, index) => {
+                            return (
+                              <ProjectCard2
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>adsfsdaf.</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
