@@ -54,7 +54,7 @@ export const Projects = () => {
                       <Nav.Link eventKey="second">Repository's</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Future Projects</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -88,7 +88,7 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>adsfsdaf.</p>
+                      <p>future projects</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
